@@ -16,6 +16,14 @@ zipkin php scribe
 
 配置
 -----------------------------------
+###埋点
+(include/zipkin/phpClient/Trace.php)
+修改$GLOBALS['THRIFT_ROOT_'] ，设置include的绝对目录；就像这样$GLOBALS['THRIFT_ROOT_'] = '/usr/local/web/apache/htdocs/include';   
+
+
+###收集MQ,发送给collector（）
+(include/zipkin/phpClient/mq2collector.php)
+修改$socket = new TSocket('10.101.0.91', 9410);    collector的ip和端口。
 
 example
 -----------------------------------
