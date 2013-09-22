@@ -32,9 +32,10 @@ example
 		ZKTrace::clientSend("phpspansubeub49");
 		ZKTrace::clientReceive();
 		
-查看MQ ，在linux shell下:ipcs
+查看MQ ，在linux shell下:ipcs<br/>
 ![github](https://raw.github.com/malakaw/zipkin_php_scribe/master/img/ipcs.png "ipcs")
-
+<br/>
+主要是查看Message Queues
 
 ###收集MQ,发送给collector
 		/usr/local/php/bin/php /usr/local/web/apache/htdocs/include/zipkin/phpClient/mq2collector.php
