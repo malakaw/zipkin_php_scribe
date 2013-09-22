@@ -21,12 +21,23 @@ zipkin php scribe
 修改$GLOBALS['THRIFT_ROOT_'] ，设置include的绝对目录；就像这样$GLOBALS['THRIFT_ROOT_'] = '/usr/local/web/apache/htdocs/include';   
 
 
-###收集MQ,发送给collector（）
+###收集MQ,发送给collector
 (include/zipkin/phpClient/mq2collector.php)
 修改$socket = new TSocket('10.101.0.91', 9410);    collector的ip和端口。
 
 example
 -----------------------------------
+
+###埋点
+		ZKTrace::clientSend("phpspansubeub49");
+		ZKTrace::clientReceive();
+		
+查看MQ ，在linux shell下:ipcs
+![github](https://raw.github.com/malakaw/zipkin_php_scribe/master/img/ipcs.png "ipcs")
+
+
+###收集MQ,发送给collector
+		/usr/local/php/bin/php /usr/local/web/apache/htdocs/include/zipkin/phpClient/mq2collector.php
 
 
 
