@@ -10,7 +10,8 @@ zipkin php scribe
 
 环境
 -----------------------------------
-此版本不支持windows , php需要安装sysvsem ；可以参考我的php安装(apache服务)
+此版本不支持windows , php需要安装sysvsem ；
+###可以参考我的php安装(apache服务)
 		configure  --prefix=/usr/local/web/apache   --enable-shared=max --enable-module=rewirte   --enable-module=so  --with-pcre=/usr/local/pcre --with-apr=/usr/local/apr --with-apr-util=/usr/local/apr-util --enable-sysvmsg --with-apxs2=/usr/local/web/apache/bin/apxs
 
 配置
