@@ -28,7 +28,7 @@ zipkin php scribe
 example
 -----------------------------------
 
-###埋点
+###埋点，可以参考文件test_zipkin/t1.php
 		ZKTrace::clientSend("phpspansubeub49");
 		ZKTrace::clientReceive();
 		
