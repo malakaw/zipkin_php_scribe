@@ -1,0 +1,11 @@
+....................................................................................................................................................2013-09-27 01:25:48,539:20523(0x2ab7023e3940):ZOO_WARN@zookeeper_interest@1461: Exceeded deadline by 14ms
+.........................2013-09-27 01:26:38,574:20523(0x2ab7023e3940):ZOO_WARN@zookeeper_interest@1461: Exceeded deadline by 18ms
+..........................................2013-09-27 01:28:01,945:20523(0x2ab7023e3940):ZOO_WARN@zookeeper_interest@1461: Exceeded deadline by 17ms
+.....................................................................................................................................2013-09-27 01:32:28,699:20523(0x2ab7023e3940):ZOO_ERROR@handle_socket_error_msg@1528: Socket [10.101.0.91:2181] zk retcode=-7, errno=110(Connection timed out): connection timed out (exceeded timeout by 0ms)
+Insider Watcher
+not----1192013-09-27 01:32:35,372:20523(0x2ab7023e3940):ZOO_ERROR@handle_socket_error_msg@1528: Socket [10.101.0.91:2181] zk retcode=-7, errno=110(Connection timed out): connection timed out (exceeded timeout by 2ms)
+PHP Warning:  Zookeeper::get(): error: operation timeout in /opt/httpd/htdocs/include/zipkin/phpClient/mq2collector_zk.php on line 47
+
+Warning: Zookeeper::get(): Zookeeper::get(): error: operation timeout in /opt/httpd/htdocs/include/zipkin/phpClient/mq2collector_zk.php on line 47
+
+Warning: Zookeeper::get(): Zookeeper::get(): error: operation timeout in /opt/httpd/htdocs/include/zipkin/phpClient/mq2collector_zk.php on line 47

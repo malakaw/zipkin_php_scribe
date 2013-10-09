@@ -1,0 +1,14 @@
+........................................................................2013-09-27 10:30:02,304:11402(0x2b89bfb25940):ZOO_WARN@zookeeper_interest@1461: Exceeded deadline by 15ms
+...................=send MQ=.=send MQ=.........................2013-09-27 10:31:32,348:11402(0x2b89bfb25940):ZOO_ERROR@handle_socket_error_msg@1528: Socket [10.101.0.91:2181] zk retcode=-7, errno=110(Connection timed out): connection timed out (exceeded timeout by 0ms)
+Insider Watcher
+not----1192013-09-27 10:31:39,016:11402(0x2b89bfb25940):ZOO_ERROR@handle_socket_error_msg@1528: Socket [10.101.0.91:2181] zk retcode=-7, errno=110(Connection timed out): connection timed out (exceeded timeout by 2ms)
+PHP Warning:  Zookeeper::get(): error: operation timeout in /opt/httpd/htdocs/include/zipkin/phpClient/mq2collector_zk.php on line 48
+
+Warning: Zookeeper::get(): error: operation timeout in /opt/httpd/htdocs/include/zipkin/phpClient/mq2collector_zk.php on line 48
+...............................................................................................................................................................................2013-09-27 10:41:27,849:11508(0x2b3dde5e9940):ZOO_WARN@zookeeper_interest@1461: Exceeded deadline by 20ms
+............................................................................................................................................................................................................................................................................2013-09-27 10:55:47,796:11876(0x2b7b422bf940):ZOO_WARN@zookeeper_interest@1461: Exceeded deadline by 19ms
+.........................................................................................................2013-09-27 11:04:19,986:11969(0x2b27828aa940):ZOO_WARN@zookeeper_interest@1461: Exceeded deadline by 27ms
+.............................................................................................................=send MQ=.=send MQ=.=send MQ=.=send MQ=.=send MQ=.=send MQ=.=send MQ=.=send MQ=..........2013-09-27 11:16:11,052:12137(0x2ba4529b8940):ZOO_ERROR@handle_socket_error_msg@1528: Socket [10.101.0.91:2181] zk retcode=-7, errno=110(Connection timed out): connection timed out (exceeded timeout by 0ms)
+Insider Watcher
+not----1192013-09-27 11:16:17,720:12137(0x2ba4529b8940):ZOO_ERROR@handle_socket_error_msg@1528: Socket [10.101.0.91:2181] zk retcode=-7, errno=110(Connection timed out): connection timed out (exceeded timeout by 1ms)
+.=send MQ=.=send MQ=.....................

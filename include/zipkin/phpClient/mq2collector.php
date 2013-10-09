@@ -4,10 +4,13 @@
 
 try{   
 
+    $ini_array = parse_ini_file("config.ini");
+    $ini_array["zookeeperip"];
+    $ini_array["zookeeperport"];
 
 
     //包含thrift客户端库文件    
-    $GLOBALS['THRIFT_ROOT_'] = '/usr/local/web/apache/htdocs/include/zipkin';   
+    $GLOBALS['THRIFT_ROOT_'] = $ini_array["includepath"].'/zipkin';   
     //$GLOBALS['THRIFT_ROOT'] = '../include/zipkin';     
     require_once $GLOBALS['THRIFT_ROOT_'].'/Thrift.php';    
     require_once $GLOBALS['THRIFT_ROOT_'].'/protocol/TBinaryProtocol.php';    
@@ -16,14 +19,14 @@ try{
     require_once $GLOBALS['THRIFT_ROOT_'].'/transport/THttpClient.php';    
     require_once $GLOBALS['THRIFT_ROOT_'].'/transport/TFramedTransport.php'; 
     require_once $GLOBALS['THRIFT_ROOT_'].'/transport/TMemoryBuffer.php';   
-    error_reporting(E_NONE);    
+    //error_reporting(E_NONE);    
    
    //包含helloworld接口文件  
     require_once $GLOBALS['THRIFT_ROOT_'].'/packages/zipkinCollector/ZipkinCollector.php';    
     require_once $GLOBALS['THRIFT_ROOT_'].'/packages/zipkinCore/zipkinCore_types.php';  
     require_once $GLOBALS['THRIFT_ROOT_'].'/phpClient/testLogEntry.php';
     include_once $GLOBALS['THRIFT_ROOT_'].'/phpClient/mq.php'; 
-    error_reporting(E_ALL);    
+    //error_reporting(E_ALL);    
      
     $span = MessageQueue::getInstance()->pop();
 

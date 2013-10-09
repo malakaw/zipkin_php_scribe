@@ -1,5 +1,7 @@
 <?php
 
+
+
 class MessageQueue {
     
     static private  $MESSAGE_QUENEN = NULL;
@@ -28,7 +30,12 @@ class MessageQueue {
 
     public  function  push($mess)
     {
-        msg_send(self::$MESSAGE_QUENEN, 1, $mess);
+
+        if(msg_stat_queue(self::$MESSAGE_QUENEN)['msg_qnum'] < 500)
+        {
+            msg_send(self::$MESSAGE_QUENEN, 1, $mess);    
+        }
+        
     }
 
     public  function pop()
@@ -37,7 +44,11 @@ class MessageQueue {
         return $message;
     }
 
-  
+    //返回mq大小
+    public  function get_msg_qnum()
+    {
+        return msg_stat_queue(self::$MESSAGE_QUENEN)['msg_qnum'];
+    }
 }
 
 ?>
