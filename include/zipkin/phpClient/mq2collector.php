@@ -36,7 +36,7 @@ try{
          //echo "pop:".$span->name."<br/>";
     	echo gettype($span);
 
-	    $socket = new TSocket('10.101.0.91', 9410);    
+	    $socket = new TSocket('x.x.x.x', 9410);    
 	    $transport = new TFramedTransport($socket, 6024, 6024);    
 	    $protocol = new TBinaryProtocol($transport);    
 	    $client = new ZipkinCollectorClient($protocol);    
