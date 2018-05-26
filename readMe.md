@@ -1,4 +1,4 @@
-zipkin php scribe
+zip kin php scribe
 ===================================
 
 ¸ÅÊö
